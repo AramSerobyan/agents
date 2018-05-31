@@ -539,7 +539,7 @@ to-report get-reward [ move ]
   ;did it grab the gold
   ifelse move = 4
   [
-  if ( [pcolor] of patch cur_xcor cur_ycor = yellow)
+    if ( ( [pcolor] of patch cur_xcor cur_ycor = yellow) and ( [has_gold] of turtle currentTurtle) )
   [ report 1000 ]
   ]
   [ report -10]
@@ -1133,7 +1133,7 @@ CHOOSER
 move_algo
 move_algo
 "Greedy" "Soft" "Reactive"
-2
+1
 
 CHOOSER
 12
@@ -1143,7 +1143,7 @@ CHOOSER
 reward_algo
 reward_algo
 "Q learning" "SARSA"
-0
+1
 
 SLIDER
 13
