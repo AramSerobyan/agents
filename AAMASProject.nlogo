@@ -539,7 +539,7 @@ to-report get-reward [ move ]
   ;did it grab the gold
   ifelse move = 4
   [
-    if ( ( [pcolor] of patch cur_xcor cur_ycor = yellow) and ( [has_gold] of turtle currentTurtle) )
+    if ( ( [pcolor] of patch cur_xcor cur_ycor = yellow) and ( [has_gold] of turtle currentTurtle  = 0) )
   [ report 1000 ]
   ]
   [ report -10]
@@ -977,10 +977,10 @@ ticks
 30.0
 
 BUTTON
-14
-20
-78
-53
+17
+10
+81
+43
 Setup
 setup
 NIL
@@ -1062,10 +1062,10 @@ NIL
 1
 
 BUTTON
-80
-20
-143
-53
+83
+10
+146
+43
 go
 go
 T
@@ -1097,9 +1097,9 @@ NIL
 
 SLIDER
 13
-59
+78
 185
-92
+111
 pit_count
 pit_count
 0
@@ -1112,9 +1112,9 @@ HORIZONTAL
 
 SLIDER
 13
-94
+113
 185
-127
+146
 max_epochs
 max_epochs
 0
@@ -1127,13 +1127,13 @@ HORIZONTAL
 
 CHOOSER
 12
-245
+263
 150
-290
+308
 move_algo
 move_algo
 "Greedy" "Soft" "Reactive"
-1
+0
 
 CHOOSER
 12
@@ -1147,9 +1147,9 @@ reward_algo
 
 SLIDER
 13
-196
+215
 185
-229
+248
 learning_rate
 learning_rate
 0
@@ -1162,14 +1162,14 @@ HORIZONTAL
 
 SLIDER
 13
-162
+181
 185
-195
+214
 discount_factor
 discount_factor
 0
 1
-0.53
+0.77
 0.01
 1
 NIL
@@ -1218,12 +1218,12 @@ epoch
 11
 
 BUTTON
-146
-20
-209
-53
-go
-go
+18
+44
+113
+77
+reset-Q-val
+reset-Q-value\nset win_rate 0\nset epoch 0\n
 NIL
 1
 T
@@ -1275,14 +1275,14 @@ Cooperation
 
 SLIDER
 13
-128
+147
 185
-161
+180
 number_of_golds
 number_of_golds
 1
 10
-4.0
+10.0
 1
 1
 NIL
