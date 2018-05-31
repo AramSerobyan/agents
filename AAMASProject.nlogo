@@ -2,7 +2,7 @@
 
 
 
-globals [win_rate num_moves gold_x gold_y gold_count currentTurtle bExit epoch time_steps epsilon visited_map offset temperature coop_Q_values]
+globals [win_rate num_moves gold_x gold_y golds currentTurtle bExit epoch time_steps epsilon visited_map offset temperature coop_Q_values]
 
 
 ;;; Entitities
@@ -46,6 +46,7 @@ to init-globals
   set visited_map init-visited-map
   set temperature 100
   set win_rate 0
+  set golds init-golds
 ;  if (cooperation)
   set coop_Q_values init-Q-values
 end
@@ -58,6 +59,10 @@ to-report init-Q-values
   report array:from-list n-values ( world-width  )  [
     array:from-list n-values ( world-height ) [
       array:from-list n-values num_moves [0] ]]
+end
+
+to-report init-golds
+  report array:from-list n-values ( number_of_golds  )  [ list 0 0 ]
 end
 
 to summon-moths
@@ -167,7 +172,7 @@ to summon-gold
     [ set check 1]
   ]
 
-
+  set-gold some_xcor some_ycor counter
   set gold_x some_xcor
   set gold_y some_ycor
   ask patch some_xcor some_ycor [ set pcolor yellow]
@@ -218,6 +223,7 @@ to reset
    set hidden? false
   ]
    ;; new pits ?
+  reinit-gold
    set epoch (epoch + 1)
    set time_steps 0
    set bExit 0
@@ -329,16 +335,29 @@ end
 to go-grab
   if ( [has_gold] of moth currentTurtle = 0 )
   [
-  ifelse xcor = gold_x
- [ if ycor = gold_y
-    [
-      ask patch gold_x gold_y [set pcolor black]
-      ask moth currentTurtle [ set has_gold 1 ]
-    ]]
-  [
-  ]
+    let x_cor ([xcor] of turtle currentTurtle)
+    let y_cor ([ycor] of turtle currentTurtle)
+    if( ([pcolor] of patch x_cor y_cor) = yellow )
+     [ ask moth currentTurtle [set has_gold 1]
+        ask patch x_cor y_cor [ set pcolor black]
+    ]
+
   ]
 end
+
+;to go-grab
+;  if ( [has_gold] of moth currentTurtle = 0 )
+;  [
+;  ifelse xcor = gold_x
+; [ if ycor = gold_y
+;    [
+;      ask patch gold_x gold_y [set pcolor black]
+;      ask moth currentTurtle [ set has_gold 1 ]
+;    ]]
+;  [
+;  ]
+;  ]
+;end
 
 to pit-fall
   if ( [pcolor] of patch xcor ycor = brown)
@@ -397,13 +416,13 @@ end
 
 to moth-go-grab
   let moth_num to-num your_color
-  if ([xcor] of moth moth_num) = gold_x
+  if ([has_gold] of moth moth_num = 0 )
   [
-    if ([ycor] of moth moth_num) = gold_y
-    [
-      ask patch gold_x gold_y [set pcolor black]
+    if ([pcolor] of patch ( [xcor] of moth moth_num) ([ycor] of moth moth_num) = yellow)
+  [
+      ask patch ( [xcor] of moth moth_num) ([ycor] of moth moth_num) [set pcolor black]
       ask moth moth_num [ set has_gold 1 ]
-    ]
+  ]
   ]
 end
 
@@ -416,6 +435,21 @@ end
 
 
 ;; Environment functions
+
+to reinit-gold
+  let counter 0
+  while [ counter < number_of_golds ]
+  [
+    let gd get-Gold counter
+   ; if (  (( first gd ) = ( [xcor] of turtle currentTurtle) )  and  (( last gd ) = ( [ycor] of turtle currentTurtle)) )
+   ; [
+      ask patch ( first gd ) ( last gd ) [ set pcolor yellow]
+    set counter (counter + 1)
+     ;  ]
+  ]
+
+
+end
 
 to-report get-time-steps
   report time_steps
@@ -745,7 +779,7 @@ to-report update-neighbors [x y]
     ]
   ]
 
-  if (col = yellow)
+  if (col = yellow) and ( [has_gold] of turtle CurrentTurtle = 0)
   [
     report 1
   ]
@@ -856,6 +890,16 @@ to set-cell-grey [x y]
   [
     ask patch x y [set pcolor white]
   ]
+end
+
+
+to-report get-Gold [ x]
+  report array:item golds x
+end
+
+
+to set-gold [x y pos]
+   array:set golds pos  (list x y )
 end
 
 to-report get-Q-values [x y]
@@ -1089,7 +1133,7 @@ CHOOSER
 move_algo
 move_algo
 "Greedy" "Soft" "Reactive"
-1
+2
 
 CHOOSER
 12
@@ -1238,7 +1282,7 @@ number_of_golds
 number_of_golds
 1
 10
-10.0
+4.0
 1
 1
 NIL
