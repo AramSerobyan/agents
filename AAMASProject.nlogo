@@ -25,7 +25,7 @@ to setup
   summon-pits
   summon-gold
   summon-exits
-  set epoch (epoch + 1)
+ ; set epoch (epoch + 1)
   set time_steps 0
   set bExit 0
   reset-ticks
@@ -191,20 +191,45 @@ to go
 
     ifelse (can-exit = 0)[print ("moths won!")
       set win_rate win_rate + 1;
-    ][      print("game over")]
-    if (move_algo = "Reactive")
+    ]
+    [      print("game over")]
+    ifelse (move_algo = "Reactive")
       [ clear-turtles
-      setup]
+        clear-patches
+      ;  clear-all
+  set-world-size
+  set currentTurtle 0
+  set num_moves 5
+  set epoch epoch + 1
+  set epsilon 0.9
+  set visited_map init-visited-map
+  set temperature 100
+  ;set win_rate 0
+  set golds init-golds
+  summon-moths
+  summon-pits
+  summon-gold
+  summon-exits
+          set time_steps 0
+  set bExit 0
+          reset-ticks
+
+
+    ]
+    [
     reset
+    ]
+  ]
+  [
     if epoch >= max_epochs
     [stop]
-  ]
 
-  [
+
     agent-loop
     set time_steps (time_steps + 1)
   ]
   tick
+
 end
 
 to reset
@@ -500,7 +525,9 @@ to-report next-move [x y]
      [report new-move-e-greedy x y]
      [ifelse move_algo = "Soft"
      [report new-move-soft x y]
-     [report new-move-reactive x y]]
+     [ifelse move_algo = "Naive"
+      [report random 5]
+      [report new-move-reactive x y]]]
 end
 
 to-report new-move-e-greedy [ x y]
@@ -1132,8 +1159,8 @@ CHOOSER
 308
 move_algo
 move_algo
-"Greedy" "Soft" "Reactive"
-0
+"Greedy" "Soft" "Reactive" "Naive"
+1
 
 CHOOSER
 12
@@ -1282,48 +1309,65 @@ number_of_golds
 number_of_golds
 1
 10
-10.0
+1.0
 1
 1
 NIL
 HORIZONTAL
 
+BUTTON
+114
+44
+177
+77
+go-
+go
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
 @#$#@#$#@
 ## WHAT IS IT?
 
-(a general understanding of what the model is trying to show or explain)
+A multi-agent version of the Wumpus World game. The monster is removed for simplicity. There are few different Reinforcement learning algorithms implemented. Specifically Sarsa and Qlearning, with Greedy and Soft-max move decision algorithms. ALso there is a reactive version of the world and naive one.
 
 ## HOW IT WORKS
 
-(what rules the agents use to create the overall behavior of the model)
+For Reinforcement They fill Q-learning matrix. They can work all together or everyone for themselves. Cooperation switch is responsible for determining that.
 
 ## HOW TO USE IT
 
-(how to use the model, including a description of each of the items in the Interface tab)
+Setup- sets the scene up.
+go - will triger the model. it will reinitiate everything and run it again until it reaches the maximal ammount. ( you can control maximal amount by epoch slider.) 
+For reactive model it generates a new map in each model.
+reset-Q-vals will set the Q-value matrix to 0's allowing us to run different learning model in the same environment. it also will set winning rate and epochs to 0.
+pit_count will control the amount of pits in our world.
+max_epochs will control how many time the model will be used for training.
+discoutn_factor and learning_rate are variables between 0 and 1 used for learning algorithms. They determine how effective is the algorithm, how inclined to high valued moveds the agent should be, and what is the affect of the new move in the q-values.
+move_algo has four options "Greedy" "Soft-max" "Naive" "Reactive" you can choose the desired movement algorithm with it. WHile greedy and soft-max will be tightly connected with learning algorithms, the other two are independent.
+reward_algo determines how q-values are changed. It is basically the learning algorithms. We have "Q-learning" and "Sarsa" algorithms.
+Cooperation determines if agents share one matrix for Q-values or each stores their own.
+left,up,right,bottom,grab bottons control a specific agent. you can determine the agent you want to control by "Your_color" chooser.
+"word_size" allows you to change the world size. there are few determined sizes.
+time_steps count how many iterations agents had in each epoch. Epoch is self-explanatory.
+wins determines how many times agents had won the game. 
+Lastly, the plot will plot each agents total reward by the end of the game.
 
 ## THINGS TO NOTICE
 
-(suggested things for the user to notice while running the model)
+Surprisingly cooperation doesn't give good result for the cases when the gold is fewer than the agents. The reason for it is that agents all learn to grab the golds and the ones left without gold are left to wonder in the environment.
 
-## THINGS TO TRY
 
-(suggested things for the user to try to do (move sliders, switches, etc.) with the model)
-
-## EXTENDING THE MODEL
-
-(suggested things to add or change in the Code tab to make the model more complicated, detailed, accurate, etc.)
-
-## NETLOGO FEATURES
-
-(interesting or unusual features of NetLogo that the model uses, particularly in the Code tab; or where workarounds were needed for missing features)
-
-## RELATED MODELS
-
-(models in the NetLogo Models Library and elsewhere which are of related interest)
 
 ## CREDITS AND REFERENCES
 
-(a reference to the model's URL on the web if it has one, as well as any other necessary credits, citations, and links)
+The model was made during "AAMAS: Autonomous agents and multi-agent systems" Course in IST, Portugal by Aram Serobyan and Olena Mashkina. 
 @#$#@#$#@
 default
 true
