@@ -1,0 +1,268 @@
+General,Payoff,Discount_Factor,Learning Rate,Difficulty,Value,Golds,Epochs
+E-Greedy,Q-Learning,0.1,0.1,Hard,0.084,1,25000
+E-Greedy,Q-Learning,0.1,0.9,Hard,0.112,1,25000
+E-Greedy,Q-Learning,0.9,0.1,Hard,0.048,1,25000
+E-Greedy,Q-Learning,0.9,0.9,Hard,0.032,1,25000
+E-Greedy,Q-Learning Coop,0.1,0.1,Hard,0.092,1,25000
+E-Greedy,Q-Learning Coop,0.1,0.9,Hard,0.128,1,25000
+E-Greedy,Q-Learning Coop,0.9,0.1,Hard,0.124,1,25000
+E-Greedy,Q-Learning Coop,0.9,0.9,Hard,0.132,1,25000
+E-Greedy,SARSA,0.1,0.1,Hard,0.136,1,25000
+E-Greedy,SARSA,0.1,0.9,Hard,0.08,1,25000
+E-Greedy,SARSA,0.9,0.1,Hard,0.108,1,25000
+E-Greedy,SARSA,0.9,0.9,Hard,0.048,1,25000
+E-Greedy,SARSA Coop,0.1,0.1,Hard,0.196,1,25000
+E-Greedy,SARSA Coop,0.1,0.9,Hard,0.192,1,25000
+E-Greedy,SARSA Coop,0.9,0.1,Hard,0.244,1,25000
+E-Greedy,SARSA Coop,0.9,0.9,Hard,0.164,1,25000
+Soft-max,Q-Learning,0.1,0.1,Hard,0.316,1,25000
+Soft-max,Q-Learning,0.1,0.9,Hard,0.196,1,25000
+Soft-max,Q-Learning,0.9,0.1,Hard,0.3,1,25000
+Soft-max,Q-Learning,0.9,0.9,Hard,0.26,1,25000
+Soft-max,Q-Learning Coop,0.1,0.1,Hard,0.116,1,25000
+Soft-max,Q-Learning Coop,0.1,0.9,Hard,0.112,1,25000
+Soft-max,Q-Learning Coop,0.9,0.1,Hard,0.18,1,25000
+Soft-max,Q-Learning Coop,0.9,0.9,Hard,0.12,1,25000
+Soft-max,SARSA,0.1,0.1,Hard,0.336,1,25000
+Soft-max,SARSA,0.1,0.9,Hard,0.18,1,25000
+Soft-max,SARSA,0.9,0.1,Hard,0.16,1,25000
+Soft-max,SARSA,0.9,0.9,Hard,0.02,1,25000
+Soft-max,SARSA Coop,0.1,0.1,Hard,0.124,1,25000
+Soft-max,SARSA Coop,0.1,0.9,Hard,0.128,1,25000
+Soft-max,SARSA Coop,0.9,0.1,Hard,0.16,1,25000
+Soft-max,SARSA Coop,0.9,0.9,Hard,0.088,1,25000
+E-Greedy,Q-Learning,0.1,0.1,Hard,2.26,4,5000
+E-Greedy,Q-Learning,0.1,0.9,Hard,1.98,4,5000
+E-Greedy,Q-Learning,0.9,0.1,Hard,4.3,4,5000
+E-Greedy,Q-Learning,0.9,0.9,Hard,5.12,4,5000
+E-Greedy,Q-Learning Coop,0.1,0.1,Hard,1.46,4,5000
+E-Greedy,Q-Learning Coop,0.1,0.9,Hard,1.98,4,5000
+E-Greedy,Q-Learning Coop,0.9,0.1,Hard,4.58,4,5000
+E-Greedy,Q-Learning Coop,0.9,0.9,Hard,1.96,4,5000
+E-Greedy,SARSA,0.1,0.1,Hard,1.92,4,5000
+E-Greedy,SARSA,0.1,0.9,Hard,1.58,4,5000
+E-Greedy,SARSA,0.9,0.1,Hard,1.44,4,5000
+E-Greedy,SARSA,0.9,0.9,Hard,3.32,4,5000
+E-Greedy,SARSA Coop,0.1,0.1,Hard,2.1,4,5000
+E-Greedy,SARSA Coop,0.1,0.9,Hard,2.28,4,5000
+E-Greedy,SARSA Coop,0.9,0.1,Hard,2.52,4,5000
+E-Greedy,SARSA Coop,0.9,0.9,Hard,2.3,4,5000
+Soft-max,Q-Learning,0.1,0.1,Hard,3.34,4,5000
+Soft-max,Q-Learning,0.1,0.9,Hard,2.3,4,5000
+Soft-max,Q-Learning,0.9,0.1,Hard,7.86,4,5000
+Soft-max,Q-Learning,0.9,0.9,Hard,4.64,4,5000
+Soft-max,Q-Learning Coop,0.1,0.1,Hard,1.8,4,5000
+Soft-max,Q-Learning Coop,0.1,0.9,Hard,1.94,4,5000
+Soft-max,Q-Learning Coop,0.9,0.1,Hard,2.12,4,5000
+Soft-max,Q-Learning Coop,0.9,0.9,Hard,2.06,4,5000
+Soft-max,SARSA,0.1,0.1,Hard,3.22,4,5000
+Soft-max,SARSA,0.1,0.9,Hard,2.3,4,5000
+Soft-max,SARSA,0.9,0.1,Hard,3.12,4,5000
+Soft-max,SARSA,0.9,0.9,Hard,1.12,4,5000
+Soft-max,SARSA Coop,0.1,0.1,Hard,1.76,4,5000
+Soft-max,SARSA Coop,0.1,0.9,Hard,2,4,5000
+Soft-max,SARSA Coop,0.9,0.1,Hard,2.08,4,5000
+Soft-max,SARSA Coop,0.9,0.9,Hard,1.88,4,5000
+E-Greedy,Q-Learning,0.1,0.1,Hard,3.44,8,5096
+E-Greedy,Q-Learning,0.1,0.9,Hard,3.04,8,5096
+E-Greedy,Q-Learning,0.9,0.1,Hard,5.28,8,5096
+E-Greedy,Q-Learning,0.9,0.9,Hard,4.7,8,5096
+E-Greedy,Q-Learning Coop,0.1,0.1,Hard,2.36,8,5096
+E-Greedy,Q-Learning Coop,0.1,0.9,Hard,2.96,8,5096
+E-Greedy,Q-Learning Coop,0.9,0.1,Hard,4.96,8,5096
+E-Greedy,Q-Learning Coop,0.9,0.9,Hard,3,8,5096
+E-Greedy,SARSA,0.1,0.1,Hard,3.18,8,5096
+E-Greedy,SARSA,0.1,0.9,Hard,43.06,8,5096
+E-Greedy,SARSA,0.9,0.1,Hard,4.9,8,5096
+E-Greedy,SARSA,0.9,0.9,Hard,2.52,8,5096
+E-Greedy,SARSA Coop,0.1,0.1,Hard,3.96,8,5096
+E-Greedy,SARSA Coop,0.1,0.9,Hard,4.04,8,5096
+E-Greedy,SARSA Coop,0.9,0.1,Hard,3.42,8,5096
+E-Greedy,SARSA Coop,0.9,0.9,Hard,3.8,8,5096
+Soft-max,Q-Learning,0.1,0.1,Hard,5.12,8,5096
+Soft-max,Q-Learning,0.1,0.9,Hard,4.24,8,5096
+Soft-max,Q-Learning,0.9,0.1,Hard,17.14,8,5096
+Soft-max,Q-Learning,0.9,0.9,Hard,5.86,8,5096
+Soft-max,Q-Learning Coop,0.1,0.1,Hard,4.02,8,5096
+Soft-max,Q-Learning Coop,0.1,0.9,Hard,3.78,8,5096
+Soft-max,Q-Learning Coop,0.9,0.1,Hard,3.8,8,5096
+Soft-max,Q-Learning Coop,0.9,0.9,Hard,4.46,8,5096
+Soft-max,SARSA,0.1,0.1,Hard,4.68,8,5096
+Soft-max,SARSA,0.1,0.9,Hard,4.46,8,5096
+Soft-max,SARSA,0.9,0.1,Hard,4.36,8,5096
+Soft-max,SARSA,0.9,0.9,Hard,2.08,8,5096
+Soft-max,SARSA Coop,0.1,0.1,Hard,3.7,8,5096
+Soft-max,SARSA Coop,0.1,0.9,Hard,4.18,8,5096
+Soft-max,SARSA Coop,0.9,0.1,Hard,3.92,8,5096
+Soft-max,SARSA Coop,0.9,0.9,Hard,3.96,8,5096
+E-Greedy,Q-Learning,0.95,0.1,Hard,2.96,8,5096
+E-Greedy,Q-Learning,0.99,0.1,Hard,2.28,8,5096
+E-Greedy,Q-Learning Coop,0.95,0.1,Hard,2.64,8,5096
+E-Greedy,SARSA,0.95,0.1,Hard,5.24,8,5096
+E-Greedy,SARSA Coop,0.95,0.1,Hard,4.48,8,5096
+Soft-max,Q-Learning,0.95,0.1,Hard,51.02,8,5096
+Soft-max,Q-Learning Coop,0.95,0.1,Hard,3.58,8,5096
+Soft-max,SARSA,0.95,0.1,Hard,3.44,8,5096
+Soft-max,SARSA Coop,0.95,0.1,Hard,3.98,8,5096
+Soft-max,Q-Learning,0.97,0.1,Hard,79.66,8,5096
+Soft-max,Q-Learning,0.99,0.1,Hard,96.36,8,5096
+Soft-max,Q-Learning Coop,0.97,0.1,Hard,4,8,5096
+Soft-max,SARSA,0.97,0.1,Hard,3.1,8,5096
+Soft-max,SARSA Coop,0.97,0.1,Hard,3.98,8,5096
+Soft-max,Q-Learning Coop,0.99,0.1,Hard,3.88,8,5096
+E-Greedy,Q-Learning,0.1,0.1,Easy,9.655,1,5096
+E-Greedy,Q-Learning,0.1,0.9,Easy,8.6538,1,5096
+E-Greedy,Q-Learning,0.9,0.1,Easy,16.15,1,5096
+E-Greedy,Q-Learning,0.9,0.9,Easy,18.31,1,5096
+E-Greedy,Q-Learning Coop,0.1,0.1,Easy,8.654,1,5096
+E-Greedy,Q-Learning Coop,0.1,0.9,Easy,9.4976,1,5096
+E-Greedy,Q-Learning Coop,0.9,0.1,Easy,8.595,1,5096
+E-Greedy,Q-Learning Coop,0.9,0.9,Easy,17.23,1,5096
+E-Greedy,SARSA,0.1,0.1,Easy,10.05,1,5096
+E-Greedy,SARSA,0.1,0.9,Easy,8.281,1,5096
+E-Greedy,SARSA,0.9,0.1,Easy,12.15,1,5096
+E-Greedy,SARSA,0.9,0.9,Easy,9.301,1,5096
+E-Greedy,SARSA Coop,0.1,0.1,Easy,9.144,1,5096
+E-Greedy,SARSA Coop,0.1,0.9,Easy,9.0071,1,5096
+E-Greedy,SARSA Coop,0.9,0.1,Easy,8.615,1,5096
+E-Greedy,SARSA Coop,0.9,0.9,Easy,9.439,1,5096
+Soft-max,Q-Learning,0.1,0.1,Easy,11.34,1,5096
+Soft-max,Q-Learning,0.1,0.9,Easy,8.1633,1,5096
+Soft-max,Q-Learning,0.9,0.1,Easy,16.48,1,5096
+Soft-max,Q-Learning,0.9,0.9,Easy,11.87,1,5096
+Soft-max,Q-Learning Coop,0.1,0.1,Easy,7.751,1,5096
+Soft-max,Q-Learning Coop,0.1,0.9,Easy,7.5353,1,5096
+Soft-max,Q-Learning Coop,0.9,0.1,Easy,7.261,1,5096
+Soft-max,Q-Learning Coop,0.9,0.9,Easy,7.908,1,5096
+Soft-max,SARSA,0.1,0.1,Easy,11.79,1,5096
+Soft-max,SARSA,0.1,0.9,Easy,8.281,1,5096
+Soft-max,SARSA,0.9,0.1,Easy,10.16,1,5096
+Soft-max,SARSA,0.9,0.9,Easy,6.672,1,5096
+Soft-max,SARSA Coop,0.1,0.1,Easy,8.713,1,5096
+Soft-max,SARSA Coop,0.1,0.9,Easy,7.6531,1,5096
+Soft-max,SARSA Coop,0.9,0.1,Easy,7.751,1,5096
+Soft-max,SARSA Coop,0.9,0.9,Easy,8.34,1,5096
+E-Greedy,Q-Learning,0.95,0.1,Easy,16.307,1,5096
+E-Greedy,Q-Learning,0.97,0.1,Easy,15.856,1,5096
+E-Greedy,Q-Learning Coop,0.95,0.1,Easy,8.3791,1,5096
+E-Greedy,Q-Learning Coop,0.97,0.1,Easy,8.7716,1,5096
+E-Greedy,SARSA,0.95,0.1,Easy,11.774,1,5096
+E-Greedy,SARSA,0.97,0.1,Easy,10.636,1,5096
+E-Greedy,SARSA Coop,0.95,0.1,Easy,8.5165,1,5096
+E-Greedy,SARSA Coop,0.97,0.1,Easy,9.4976,1,5096
+Soft-max,Q-Learning,0.95,0.1,Easy,19.937,1,5096
+Soft-max,Q-Learning,0.97,0.1,Easy,27.355,1,5096
+Soft-max,Q-Learning Coop,0.95,0.1,Easy,8.1436,1,5096
+Soft-max,Q-Learning Coop,0.97,0.1,Easy,7.6138,1,5096
+Soft-max,SARSA,0.95,0.1,Easy,6.6719,1,5096
+Soft-max,SARSA,0.97,0.1,Easy,6.1609,1,5096
+Soft-max,SARSA Coop,0.95,0.1,Easy,8.1436,1,5096
+Soft-max,SARSA Coop,0.97,0.1,Easy,8.438,1,5096
+E-Greedy,Q-Learning,0.95,0.9,Easy,17.58,1,5096
+E-Greedy,Q-Learning,0.97,0.9,Easy,17.013,1,5096
+E-Greedy,Q-Learning Coop,0.95,0.9,Easy,17.78,1,5096
+E-Greedy,Q-Learning Coop,0.97,0.9,Easy,17.308,1,5096
+E-Greedy,SARSA,0.95,0.9,Easy,5.887,1,5096
+E-Greedy,SARSA,0.97,0.9,Easy,4.7488,1,5096
+E-Greedy,SARSA Coop,0.95,0.9,Easy,8.32,1,5096
+E-Greedy,SARSA Coop,0.97,0.9,Easy,8.1808,1,5096
+Soft-max,Q-Learning,0.95,0.9,Easy,12.62,1,5096
+Soft-max,Q-Learning,0.97,0.9,Easy,15.012,1,5096
+Soft-max,Q-Learning Coop,0.95,0.9,Easy,7.712,1,5096
+Soft-max,Q-Learning Coop,0.97,0.9,Easy,7.6531,1,5096
+Soft-max,SARSA,0.95,0.9,Easy,2.983,1,5096
+Soft-max,SARSA,0.97,0.9,Easy,0.9027,1,5096
+Soft-max,SARSA Coop,0.95,0.9,Easy,8.104,1,5096
+Soft-max,SARSA Coop,0.97,0.9,Easy,8.0259,1,5096
+E-Greedy,Q-Learning,0.99,0.1,Easy,15.777,1,5096
+Soft-max,Q-Learning,0.99,0.1,Easy,48.332,1,5096
+E-Greedy,Q-Learning,0.99,0.9,Easy,14.97,1,5096
+E-Greedy,Q-Learning Coop,0.99,0.9,Easy,16.78,1,5096
+E-Greedy,SARSA,0.99,0.9,Easy,3.199,1,5096
+E-Greedy,SARSA Coop,0.99,0.9,Easy,8.046,1,5096
+Soft-max,Q-Learning,0.99,0.9,Easy,32.99,1,5096
+E-Greedy,Q-Learning,0.1,0.1,Easy,14.03,4,5096
+E-Greedy,Q-Learning,0.1,0.9,Easy,13.52,4,5096
+E-Greedy,Q-Learning,0.9,0.1,Easy,20.66,4,5096
+E-Greedy,Q-Learning,0.9,0.9,Easy,17.92,4,5096
+E-Greedy,Q-Learning Coop,0.1,0.1,Easy,12.44,4,5096
+E-Greedy,Q-Learning Coop,0.1,0.9,Easy,12.618,4,5096
+E-Greedy,Q-Learning Coop,0.9,0.1,Easy,11.99,4,5096
+E-Greedy,Q-Learning Coop,0.9,0.9,Easy,23,4,5096
+E-Greedy,SARSA,0.1,0.1,Easy,13.8,4,5096
+E-Greedy,SARSA,0.1,0.9,Easy,12.206,4,5096
+E-Greedy,SARSA,0.9,0.1,Easy,18.15,4,5096
+E-Greedy,SARSA,0.9,0.9,Easy,11,4,5096
+E-Greedy,SARSA Coop,0.1,0.1,Easy,14.62,4,5096
+E-Greedy,SARSA Coop,0.1,0.9,Easy,13.697,4,5096
+E-Greedy,SARSA Coop,0.9,0.1,Easy,13.17,4,5096
+E-Greedy,SARSA Coop,0.9,0.9,Easy,14,4,5096
+Soft-max,Q-Learning,0.1,0.1,Easy,17.07,4,5096
+Soft-max,Q-Learning,0.1,0.9,Easy,12.95,4,5096
+Soft-max,Q-Learning,0.9,0.1,Easy,15.29,4,5096
+Soft-max,Q-Learning,0.9,0.9,Easy,13.62,4,5096
+Soft-max,Q-Learning Coop,0.1,0.1,Easy,12.38,4,5096
+Soft-max,Q-Learning Coop,0.1,0.9,Easy,12.461,4,5096
+Soft-max,Q-Learning Coop,0.9,0.1,Easy,12.09,4,5096
+Soft-max,Q-Learning Coop,0.9,0.9,Easy,12,4,5096
+Soft-max,SARSA,0.1,0.1,Easy,18.27,4,5096
+Soft-max,SARSA,0.1,0.9,Easy,13.265,4,5096
+Soft-max,SARSA,0.9,0.1,Easy,14.8,4,5096
+Soft-max,SARSA,0.9,0.9,Easy,8.438,4,5096
+Soft-max,SARSA Coop,0.1,0.1,Easy,12.36,4,5096
+Soft-max,SARSA Coop,0.1,0.9,Easy,12.657,4,5096
+Soft-max,SARSA Coop,0.9,0.1,Easy,12.15,4,5096
+Soft-max,SARSA Coop,0.9,0.9,Easy,11.7,4,5096
+E-Greedy,Q-Learning,0.95,0.1,Easy,21.134,4,5096
+E-Greedy,Q-Learning,0.97,0.1,Easy,22.9,4,5096
+E-Greedy,Q-Learning,0.99,0.1,Easy,30.632,4,5096
+E-Greedy,Q-Learning,0.95,0.9,Easy,15.88,4,5096
+E-Greedy,Q-Learning Coop,0.95,0.1,Easy,12.971,4,5096
+E-Greedy,Q-Learning Coop,0.97,0.1,Easy,12.441,4,5096
+E-Greedy,Q-Learning Coop,0.99,0.1,Easy,12.323,4,5096
+E-Greedy,Q-Learning Coop,0.95,0.9,Easy,21.27,4,5096
+E-Greedy,SARSA,0.95,0.1,Easy,16.503,4,5096
+E-Greedy,SARSA,0.97,0.1,Easy,15.071,4,5096
+E-Greedy,SARSA,0.99,0.1,Easy,13.854,4,5096
+E-Greedy,SARSA,0.95,0.9,Easy,8.948,4,5096
+E-Greedy,SARSA Coop,0.95,0.1,Easy,14.109,4,5096
+E-Greedy,SARSA Coop,0.97,0.1,Easy,13.332,4,5096
+E-Greedy,SARSA Coop,0.99,0.1,Easy,13.599,4,5096
+E-Greedy,SARSA Coop,0.95,0.9,Easy,13.68,4,5096
+Soft-max,Q-Learning,0.95,0.1,Easy,19.329,4,5096
+Soft-max,Q-Learning,0.97,0.1,Easy,32.261,4,5096
+Soft-max,Q-Learning,0.99,0.1,Easy,94.309,4,5096
+Soft-max,Q-Learning,0.95,0.9,Easy,17.52,4,5096
+Soft-max,Q-Learning Coop,0.95,0.1,Easy,12.029,4,5096
+Soft-max,Q-Learning Coop,0.97,0.1,Easy,12.225,4,5096
+Soft-max,Q-Learning Coop,0.99,0.1,Easy,11.833,4,5096
+Soft-max,Q-Learning Coop,0.95,0.9,Easy,11.72,4,5096
+Soft-max,SARSA,0.95,0.1,Easy,9.8509,4,5096
+Soft-max,SARSA,0.97,0.1,Easy,7.1625,4,5096
+Soft-max,SARSA,0.99,0.1,Easy,4.4152,4,5096
+Soft-max,SARSA,0.95,0.9,Easy,5.043,4,5096
+Soft-max,SARSA Coop,0.95,0.1,Easy,11.676,4,5096
+Soft-max,SARSA Coop,0.97,0.1,Easy,11.107,4,5096
+Soft-max,SARSA Coop,0.99,0.1,Easy,11.97,4,5096
+Soft-max,SARSA Coop,0.95,0.9,Easy,12.17,4,5096
+E-Greedy,Q-Learning,0.97,0.9,Easy,15.6,4,5096
+E-Greedy,Q-Learning,0.99,0.9,Easy,14.8,4,5096
+E-Greedy,Q-Learning Coop,0.97,0.9,Easy,21.272,4,5096
+E-Greedy,Q-Learning Coop,0.99,0.9,Easy,19.86,4,5096
+E-Greedy,SARSA,0.97,0.9,Easy,6.8093,4,5096
+E-Greedy,SARSA,0.99,0.9,Easy,6.299,4,5096
+E-Greedy,SARSA Coop,0.97,0.9,Easy,13.677,4,5096
+E-Greedy,SARSA Coop,0.99,0.9,Easy,13.6,4,5096
+Soft-max,Q-Learning,0.97,0.9,Easy,24.568,4,5096
+Soft-max,Q-Learning,0.99,0.9,Easy,84.73,4,5096
+Soft-max,Q-Learning Coop,0.97,0.9,Easy,12.323,4,5096
+Soft-max,Q-Learning Coop,0.99,0.9,Easy,11.54,4,5096
+Soft-max,SARSA,0.97,0.9,Easy,2.1586,4,5096
+Soft-max,SARSA,0.99,0.9,Easy,0.667,4,5096
+Soft-max,SARSA Coop,0.97,0.9,Easy,11.852,4,5096
+Soft-max,SARSA Coop,0.99,0.9,Easy,11.83,4,5096
+Naive,Naive,,,Easy,11.6954,4,5096
+Naive,Naive,,,Easy,8.0651,1,5096
+Naive,Naive,,,Hard,4.06,8,5096
+Naive,Naive,,,Hard,2.32,4,5000
+Naive,Naive,,,Hard,0.18,1,25000
